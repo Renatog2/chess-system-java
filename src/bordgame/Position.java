@@ -5,14 +5,14 @@ public class Position {
 	private int column;
 	
 	
-	//Constructors
+	// Constructors
 	public Position(int row, int column) {
 		this.row = row;
 		this.column = column;
 	}
 	
 	
-	//Getters and Setters
+	// Getters and Setters
 	public int getRow() {
 		return row;
 	}
@@ -27,7 +27,7 @@ public class Position {
 	}
 	
 	
-	//Methods
+	// Methods
 	@Override
 	public String toString() {
 		return row + ", " + column;

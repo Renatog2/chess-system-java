@@ -6,7 +6,7 @@ public class Board {
 	private Piece[][] pieces;
 	
 	
-	//Constructors
+	// Constructors
 	public Board(int rows, int columns) {
 		this.rows = rows;
 		this.columns = columns;
@@ -14,7 +14,7 @@ public class Board {
 	}
 	
 	
-	//Getters and Setters
+	// Getters and Setters
 	public int getRows() {
 		return rows;
 	}
@@ -27,5 +27,16 @@ public class Board {
 	}
 	public void setColumns(int columns) {
 		this.columns = columns;
+	}
+	
+	
+	// Methods
+	public Piece piece(int row, int column) {
+		return pieces[row][column];
+	}
+	
+	// Retorna a peça pela classe Position
+	public Piece piece(Position position) {
+		return pieces[position.getRow()][position.getColumn()];
 	}
 }
